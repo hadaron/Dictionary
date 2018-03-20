@@ -1,0 +1,16 @@
+<table border="1" width="100%">
+  <thead>
+  <tr>
+    <th>EN</th>
+    <th>RU</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @words.each do |word| %>
+    <tr>
+      <td><%= word.en %></td>
+      <td><%= word.ru %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
