@@ -4,8 +4,6 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 100.times do
-  Word.create ru: Faker::Lorem.word.capitalize,
-              en: Faker::Lorem.word.capitalize
+  Word.create ru: Faker::Lorem.word.capitalize, en: Faker::Lorem.word.capitalize
 end

@@ -8,8 +8,14 @@
   <tbody>
   <% @words.each do |word| %>
     <tr>
+      <td><%= word.id %></td>
       <td><%= word.en %></td>
       <td><%= word.ru %></td>
+      <td><%= link_to "Delete", {action: "destroy", id: word.id}, method: "delete" %></td>
+      <td><%= link_to "Update", edit_word_path(word) %></td>
+    </tr>
+    <tr>
+
     </tr>
   <% end %>
   </tbody>

@@ -1,9 +1,10 @@
-<%= form_for @words, url: {action: "create"} do |form| %>
-
+<%= form_for @words, url: {action: "update"}, :method => :PUT do |form| %>
   <%= form.label :ru %>
   <%= form.text_field :ru %>
-
+  <br>
   <%= form.label :en %>
   <%= form.text_field :en %>
+
   <%= form.submit %>
+
 <% end %>
