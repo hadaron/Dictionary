@@ -4,7 +4,6 @@ class CreateWords < ActiveRecord::Migration[5.1]
 
       t.string :ru, nil: false
       t.string :en, nil: false
-
       t.timestamps
     end
   end
